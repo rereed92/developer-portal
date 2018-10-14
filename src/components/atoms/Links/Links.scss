@@ -1,0 +1,33 @@
+@import '../../../assets/sass/mixins.scss';
+
+.link {
+  color: $color-twilight-blue;
+  text-decoration: none;
+  padding-bottom: 2px;
+  position: relative;
+  transition: color .2s ease-in-out;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: $color-twilight-blue;
+    transition: background-color .2s ease-in-out;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-mirage;
+
+    &::after {
+      background-color: $color-mirage;
+    }
+  }
+}

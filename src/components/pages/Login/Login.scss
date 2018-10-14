@@ -1,0 +1,38 @@
+@import '../../../assets/sass/mixins.scss';
+
+.login {
+  &__box {
+    overflow: hidden;
+    max-width: 700px;
+    margin: 0px auto;
+    border-radius: 10px;
+    background-color: $color-twilight-blue;
+    box-shadow: 0px 0px 10px 5px rgba($color-paradiso, .5);
+
+    @include md {
+      margin: 0px auto;
+    }
+
+    @include lg {
+      margin: 0px auto;
+    }
+  }
+
+  &__form {
+    padding: 10px 30px 30px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    background-color: $color-swans-down;
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+  }
+
+  &__button {
+    display: block;
+    margin: 40px auto 0;
+  }
+}

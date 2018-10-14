@@ -1,0 +1,30 @@
+@import './mixins.scss';
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+@for $width from 1 through 12 {
+  .col-#{$width} {
+    @include column($width);
+  }
+}
+
+
+@include md {
+  @for $width from 1 through 12 {
+    .col-md-#{$width} {
+      @include column($width);
+    }
+  }
+}
+
+@include lg {
+  @for $width from 1 through 12 {
+    .col-lg-#{$width} {
+      @include column($width);
+    }
+  }
+}

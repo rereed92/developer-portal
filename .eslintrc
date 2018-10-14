@@ -1,0 +1,23 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "plugins": [
+    "cypress",
+    "react",
+    "import",
+    "jsx-a11y"
+  ],
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-one-expression-per-line": "off",
+    "react/button-has-type": "off"
+  },
+  "globals": {
+    "window": true,
+    "document": true
+  },
+  "env": {
+    "jest": true,
+    "cypress/globals": true
+  }
+}

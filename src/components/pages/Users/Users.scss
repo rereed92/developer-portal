@@ -1,0 +1,8 @@
+@import '../../../assets/sass/mixins.scss';
+
+.users {
+  &__empty {
+    margin: 40px 0;
+    text-align: center;
+  }
+}

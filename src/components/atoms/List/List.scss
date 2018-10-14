@@ -1,0 +1,14 @@
+.list {
+  padding: 0;
+  margin: 0;
+
+  &--unstyled {
+    list-style: none;
+  }  
+
+  &--inline {
+    li {
+      display: inline-block;
+    }
+  }
+}

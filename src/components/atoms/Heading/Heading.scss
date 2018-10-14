@@ -1,0 +1,46 @@
+@import '../../../assets/sass/mixins.scss';
+
+.heading {
+  font-family: $font-family-heading;
+  
+  &--1 {
+    font-size: 40px;
+    letter-spacing: 1.2;
+    margin: 0 0 30px 0;
+    text-align: center;
+
+    @include md {
+      font-size: 50px;
+      margin: 0 0 40px 0;
+    }
+
+    @include lg {
+      font-size: 60px;
+      margin: 0 0 50px 0;
+    }
+  }
+
+  &--2 {
+    font-size: 25px;
+
+    @include md {
+      font-size: 30px;
+    }
+
+    @include lg {
+      font-size: 35px;
+    }
+  }
+
+  &--3 {
+    font-size: 20px;
+
+    @include md {
+      font-size: 24px;
+    }
+
+    @include lg {
+      font-size: 26px;
+    }
+  }
+}

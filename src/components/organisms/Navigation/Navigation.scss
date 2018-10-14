@@ -1,0 +1,50 @@
+@import '../../../assets/sass/mixins.scss';
+
+.navigation {
+  padding: 20px 0;
+  background-color: $color-twilight-blue;
+  box-shadow: 0 3px 4px 0 rgba($color-paradiso, .5);
+
+  &__list {
+    text-align: center;
+  }
+
+  &__item {
+    margin: 0 15px;
+  }
+
+  &__link {
+    display: inline-block;
+    padding-bottom: 5px;
+    color: $color-keppel;
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 30%;
+      right: 30%;
+      height: 2px;
+      background-color: $color-keppel;
+      transition: background-color .3s ease, left .3s ease, right .3s ease;
+    }
+
+    &:hover,
+    &:focus,
+    &--active {
+      text-decoration: none;
+      color: $color-paradiso;
+      transition: color .3s ease;
+
+      &::after {
+        background-color: $color-paradiso;
+        left: 0;
+        right: 0;
+        transition: background-color .3s ease, left .3s ease, right .3s ease;
+      }
+    }
+  }
+}

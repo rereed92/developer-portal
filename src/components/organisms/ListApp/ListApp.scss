@@ -1,0 +1,21 @@
+.application {
+  margin-bottom: 30px;
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__image {
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  &__links {
+    text-align: center;
+  }
+
+  &__link {
+    display: inline-block;
+    margin: 0 10px;
+  }
+}

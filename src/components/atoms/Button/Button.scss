@@ -1,0 +1,59 @@
+@import '../../../assets/sass/mixins.scss';
+
+.button {
+  appearance: none;
+  padding: 10px 15px;
+  min-width: 100px;
+  background-color: $color-paradiso;
+  border-radius: 20px;
+  border: 2px solid $color-paradiso;
+  color: $color-twilight-blue;
+  position: relative;
+  overflow: hidden;
+  transition: color .2s ease;
+
+  &::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 100%;
+    background-color: $color-twilight-blue;
+    border-color: $color-paradiso;
+    transition: right .2s linear;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 3px 2px $color-paradiso;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-paradiso;
+
+    &::before {
+      right: 0;
+    }
+  }
+
+  &__text {
+    position: relative;
+  }
+
+  &[disabled] {
+    background-color: rgba($color-paradiso, .3);
+    color: $color-paradiso;
+
+    &:hover,
+    &:focus {
+      color: $color-paradiso;
+      background-color: rgba($color-paradiso, .3);
+
+      &::before {
+        right: 100%;
+      }
+    }
+  }
+}

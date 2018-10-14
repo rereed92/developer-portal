@@ -1,0 +1,15 @@
+@import '../../../assets/sass/mixins.scss';
+
+.app {
+  &__content {
+    padding: 50px 0;
+  
+    @include md {
+      padding: 80px 0;
+    }
+  
+    @include lg {
+      padding: 100px 0;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import '../../../assets/sass/mixins.scss';
+
+.input {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid $color-paradiso;
+  padding: 10px;
+  color: $color-friar-gray;
+  
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 3px 2px $color-paradiso;
+  }
+}

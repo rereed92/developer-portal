@@ -1,0 +1,19 @@
+@import 'variables.scss';
+
+@mixin md() {
+  @media all and (min-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin lg() {
+  @media all and (min-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin column($width) {
+  flex-basis: percentage($width / 12);
+  max-width: percentage($width / 12);
+  padding: 0 15px;
+}
